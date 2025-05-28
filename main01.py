@@ -4,7 +4,7 @@ import uuid
 import streamlit as st
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
-from langchain_community.document_loaders import TextLoader
+from langchain.document_loaders import TextLoader
 from langchain_community.vectorstores import FAISS
 from langchain_openai import ChatOpenAI
 from langchain_text_splitters import RecursiveCharacterTextSplitter
