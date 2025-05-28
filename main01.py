@@ -2,7 +2,6 @@ import pickle
 import uuid
 
 import streamlit as st
-from dotenv import load_dotenv
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from langchain_community.document_loaders import TextLoader
@@ -13,7 +12,6 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 def get_answer(thy_question):
     """通过RAG获得答案"""
-    load_dotenv()
     model = ChatOpenAI(
         model='deepseek-chat',
         api_key='sk-8dca673d82b74bf59bac651337b7fba8',
